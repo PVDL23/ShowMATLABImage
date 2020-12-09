@@ -5,6 +5,12 @@ using System.Drawing.Imaging;
 
 namespace ShowMATLABImage
 {
+    /// <summary>
+    /// Draw directly to a bitmap's surface
+    /// by setting and getting pixel colors 
+    /// to and from a byte array (RGBA)
+    /// <see cref="https://stackoverflow.com/questions/24701703/c-sharp-faster-alternatives-to-setpixel-and-getpixel-for-bitmaps-for-windows-f#34801225"/>
+    /// </summary>
     public class DirectBitmap : IDisposable
     {
         public Bitmap Bitmap { get; private set; }
